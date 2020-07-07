@@ -6,4 +6,4 @@ export EDITOR=/usr/bin/vim
 
 LESSHISTFILE=-
 
-alias wget="wget --hsts-file ~/dotfiles/config/wget/wget-hsts"
+alias wget="wget --config=$XDG_CONFIG_HOME/wget/wgetrc"
