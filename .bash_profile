@@ -5,3 +5,5 @@ export TERMINAL=/usr/bin/urxvt
 export EDITOR=/usr/bin/vim
 
 LESSHISTFILE=-
+
+alias wget="wget --hsts-file ~/dotfiles/config/wget/wget-hsts"
