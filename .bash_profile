@@ -3,3 +3,5 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export TERMINAL=/usr/bin/urxvt
 export EDITOR=/usr/bin/vim
+
+LESSHISTFILE=-
