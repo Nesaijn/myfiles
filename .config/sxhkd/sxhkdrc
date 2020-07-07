@@ -5,6 +5,25 @@
 # terminal emulator
 super + Return
     urxvt
+    
+# quit window
+super + shift + q
+    bspc node -c
+
+# change focus
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
+
+# restart sxhkd
+super + Escape
+    pkill -USR1 -x sxhkd
+  
+# restart bspwm
+super + shift + r
+    bspc wm -r
+
+
+################
 
 # program launcher
 super + @space
