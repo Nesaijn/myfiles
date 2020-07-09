@@ -40,7 +40,7 @@
 
 !! URxvt Appearance
 !! ttf-hack
-!!URxvt.font: -*-hack-*
+URxvt.font: xft:Hack
 !!URxvt.boldFont: -*-hack-*
 !!URxvt.italicFont: -*-hack-*
 !!URxvt.boldItalicfont: -*-hack-*
