@@ -40,10 +40,10 @@
 
 !! URxvt Appearance
 !! ttf-hack
-URxvt.font: -*-hack-*
-URxvt.boldFont: -*-hack-*
-URxvt.italicFont: -*-hack-*
-URxvt.boldItalicfont: -*-hack-*
+!!URxvt.font: -*-hack-*
+!!URxvt.boldFont: -*-hack-*
+!!URxvt.italicFont: -*-hack-*
+!!URxvt.boldItalicfont: -*-hack-*
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
