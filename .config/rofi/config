@@ -1,7 +1,7 @@
 rofi.modi: window,run,ssh,drun
 rofi.dpi: 120
 rofi.font: Fira Code 14
-rofi.terminal: alacritty
+rofi.terminal: urxvt
 rofi.show-icons: true
 rofi.matching: fuzzy
 rofi.lines: 8
