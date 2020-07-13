@@ -14,7 +14,7 @@ super + shift + q
 super + {h,j,k,l}
     bspc node -f {west,south,north,east}
 
-# restart sxhkd
+# reload sxhkd config
 super + Escape
     pkill -USR1 -x sxhkd
   
@@ -28,10 +28,6 @@ super + shift + r
 # program launcher
 super + @space
     dmenu_run
-
-# make sxhkd reload its configuration files:
-super + Escape
-    pkill -USR1 -x sxhkd
 
 #
 # bspwm hotkeys
