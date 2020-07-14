@@ -5,7 +5,8 @@
 # terminal emulator
 super + Return
     urxvt
-super
+
+super + @space
     rofi -show drun
 
 # quit window
