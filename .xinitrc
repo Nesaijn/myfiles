@@ -1,4 +1,5 @@
 #!/bin/sh
+# cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
