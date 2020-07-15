@@ -273,7 +273,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-time =  %I:%M %p
+time =  %H:%M %p
 time-alt =  %d/%m/%Y%
 
 format-prefix = 
