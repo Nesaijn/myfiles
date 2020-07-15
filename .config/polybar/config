@@ -1,5 +1,5 @@
 ; https://github.com/isaacsa51/dotfiles-base16/blob/master/.config/polybar/config
-; yay -S siji-git
+; yay -S ttf-unifont siji-git xorg-fonts-misc
 
 
 ;==========================================================
