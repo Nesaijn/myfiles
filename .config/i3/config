@@ -199,7 +199,7 @@ gaps outer 1
 
 smart_borders on
 smart_borders no_gaps
-border_radius 6
+#border_radius 6
 
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #285577 #ffffff #2e9ef4 
