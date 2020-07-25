@@ -378,9 +378,9 @@ menu-2-1-exec = menu-open-0
 
 [module/system-bluetooth-bluetoothctl]
 type = custom/script
-exec = ~/polybar-scripts/system-bluetooth-bluetoothctl.sh
+exec = ~.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh
 tail = true
-click-left = ~/polybar-scripts/system-bluetooth-bluetoothctl.sh --toggle &
+click-left = ~.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh --toggle &
 format-foreground = #dc9659
 
 [module/spotify]
@@ -389,7 +389,7 @@ interval = 1
 format-prefix = " "
 format = <label>
 format-foreground = #a1b56c
-exec = python ~/.config/polybar/spotify_status.py -f '{artist}: {song}'
+exec = python ~/.config/polybar/polybar-scripts/spotify_status.py -f '{artist}: {song}'
 
 [settings]
 screenchange-reload = true
