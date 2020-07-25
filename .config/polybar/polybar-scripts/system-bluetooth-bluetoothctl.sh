@@ -1,6 +1,6 @@
 #!/bin/sh
 # chmod +x system-bluetooth-bluetoothctl.sh
-# pacman -S bluez-utils
+# pacman -S bluez-utils ttf-font-awesome
 
 bluetooth_print() {
     bluetoothctl | while read -r; do
