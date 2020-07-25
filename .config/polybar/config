@@ -299,6 +299,8 @@ ramp-volume-2 = 
 ramp-volume-foreground = #ab4642
 
 [module/battery]
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
 type = internal/battery
 battery = BAT0
 adapter = ADP1
