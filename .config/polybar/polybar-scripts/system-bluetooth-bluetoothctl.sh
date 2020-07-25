@@ -1,4 +1,6 @@
 #!/bin/sh
+# chmod +x system-bluetooth-bluetoothctl.sh
+# pacman -S bluez-utils
 
 bluetooth_print() {
     bluetoothctl | while read -r; do
