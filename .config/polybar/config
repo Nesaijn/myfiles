@@ -1,5 +1,5 @@
 ; https://github.com/isaacsa51/dotfiles-base16/blob/master/.config/polybar/config
-; pacman -S xorg-fonts-misc
+; pacman -S xorg-fonts-misc ttf-font-awesome
 ; yay -S ttf-unifont siji-git
 
 
@@ -60,6 +60,9 @@ module-margin-right = 1
 font-0 = "Misc Termsyn:pixelsize=10;1"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;1
 font-2 = siji:pixelsize=10;1
+font-3 = Font Awesome 5 Free:pixelsize=12;2
+font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
+font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 
 ;=============Modules Location=============================
