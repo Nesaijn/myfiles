@@ -157,7 +157,7 @@ index-sort = true
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-foreground= #ab4642
+label-focused-foreground = #ffffff
 label-focused-padding = 2.2
 
 label-occupied = %name%
@@ -165,6 +165,7 @@ label-occupied-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
+label-unfocused-foreground = #70ffffff
 label-unfocused-padding = ${self.label-focused-padding}
 
 label-empty = %name%
