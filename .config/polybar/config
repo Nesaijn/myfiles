@@ -75,6 +75,8 @@ tray-position = right
 tray-padding = 1
 tray-offset = 1
 tray-background = #282828
+; When "tray: Failed to put tray above..." error, try:
+;tray-reparent = true
 
 ;wm-restack = bspwm
 ;wm-restack = i3
