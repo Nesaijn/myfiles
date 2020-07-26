@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Depends on i3lock-color
 
 DATE=$(date +"%A, %B %-d")
 
