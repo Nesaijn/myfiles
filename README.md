@@ -1,5 +1,5 @@
 # myfiles
 
-## Install
-* i3-gaps gvim polybar
+## Install i3
+* i3-gaps i3lock-color gvim polybar
 * network-manager-applet
