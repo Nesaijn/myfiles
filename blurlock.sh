@@ -11,7 +11,7 @@ separatorcolor=00000000
 ringvercolor=00000000
 insidevercolor=00000000
 
-ringwrongcolor=00000000
+ringwrongcolor=FF0000FF
 insidewrongcolor=00000000
 
 keyhlcolor=AAAAAAFF
