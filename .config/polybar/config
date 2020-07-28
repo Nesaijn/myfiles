@@ -69,7 +69,7 @@ font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = i3 spotify
 modules-center = xwindow
-modules-right = pulseaudio system-bluetooth-bluetoothctl memory cpu battery wifi date
+modules-right = xbacklight pulseaudio system-bluetooth-bluetoothctl memory cpu battery wifi date
 
 ;==========================================================
 
@@ -203,7 +203,8 @@ label-song-ellipsis = true
 type = internal/xbacklight
 
 format = <label> <bar>
-label = BL
+;label = BL
+label = 
 
 bar-width = 10
 bar-indicator = |
