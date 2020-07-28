@@ -1,7 +1,7 @@
 # myfiles
 
 ## Install i3
-* i3-gaps i3lock-color gvim polybar
+* i3-gaps i3lock-color gvim polybar rofi
 * network-manager-applet
 * maim
 
