@@ -11,7 +11,7 @@ bluetooth_print() {
                 printf ' Off'
             else
                 printf ' On'
-            if
+            fi
 
             devices_paired=$(bluetoothctl paired-devices | grep Device | cut -d ' ' -f 2)
             counter=0
