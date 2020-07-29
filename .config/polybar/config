@@ -394,7 +394,7 @@ menu-2-1-exec = menu-open-0
 
 [module/system-bluetooth-bluetoothctl]
 type = custom/script
-exec = ~.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh
+exec = ~/.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh
 tail = true
 click-left = ~.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh --toggle &
 format-foreground = #dc9659
