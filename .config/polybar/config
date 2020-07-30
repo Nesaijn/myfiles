@@ -24,13 +24,10 @@
 [colors]
 ;background = #282828
 ;background-alt = #383838
-background = #1d1f21
-background-alt = #282828
-foreground = #e8e8e8
-foreground-alt = #d8d8d8
-primary = #ab4642
-secondary = #7cafc2
-alert = #dc9659
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
+warn = #FF6600
+alert = #FF0000
 
 ;==========================================================
 
@@ -77,7 +74,7 @@ modules-right = xbacklight pulseaudio system-bluetooth-bluetoothctl battery date
 tray-position = right
 tray-padding = 1
 tray-offset = 1
-tray-background = #282828
+tray-background = ${colors.background}
 ; When "tray: Failed to put tray above..." error, try:
 ;tray-reparent = true
 
@@ -215,7 +212,7 @@ bar-fill-font = 2
 bar-fill-foreground = #9f78e1
 bar-empty = ─
 bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+bar-empty-foreground = ${colors.foreground}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
