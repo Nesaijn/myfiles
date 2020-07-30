@@ -283,19 +283,19 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-time =  %H:%M
-time-alt =  %a, %d.%m.%Y%
+time =  %H:%M
+time-alt =  %a, %d.%m.%Y%
 
 format-prefix = 
 
 label = %date% %time%
-label-foreground = #ba8baf
+label-foreground = ${colors.foreground}
 
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%
-label-volume-foreground = #ab4642
+label-volume-foreground = ${colors.foreground}
 format-muted-prefix = "  "
 label-muted =  MUTE
 padding-right = 5
@@ -303,7 +303,7 @@ padding-right = 5
 ramp-volume-0 =  
 ramp-volume-1 =  
 ramp-volume-2 =  
-ramp-volume-foreground = #ab4642
+ramp-volume-foreground = ${colors.foreground}
 
 [module/battery]
 ; Use the following command to list batteries and adapters:
@@ -314,11 +314,11 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-foreground = #93c7c0
+format-charging-foreground = ${colors.foreground}
 
 ;format-discharging = <animation-discharging> <label-discharging>
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-foreground = #93c7c0
+format-discharging-foreground = ${colors.foreground}
 
 format-full-prefix = "  "
 
@@ -397,14 +397,14 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh
 tail = true
 click-left = ~.config/polybar/polybar-scripts/system-bluetooth-bluetoothctl.sh --toggle &
-format-foreground = #dc9659
+format-foreground = ${colors.foreground}
 
 [module/spotify]
 type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-format-foreground = #a1b56c
+format-foreground = ${colors.foreground}
 exec = python ~/.config/polybar/polybar-scripts/spotify_status.py -f '{artist}: {song}'
 
 [settings]
