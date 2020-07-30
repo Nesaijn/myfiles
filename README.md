@@ -126,7 +126,6 @@ greeter-session=lightdm-webkit2-greeter
 ...
 ``` 
 
-
 ## Touchpad Settings
 * https://wiki.archlinux.org/index.php/Libinput
 * `pacman -S xf86-input-libinput`
@@ -137,3 +136,7 @@ Option "Tapping" "on"               # To use touchpad tapping to click
 Option "ClickMethod" "clickfinger"  # To use double finger for right click and three finger for middle click
 Option "NaturalScrolling" "true"
 ```
+
+## Theme
+* Icons: https://github.com/daniruiz/flat-remix
+* GTK Theme: https://www.gnome-look.org/p/1329022/
