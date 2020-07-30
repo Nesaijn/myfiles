@@ -1,10 +1,5 @@
 # myfiles
 
-## Install i3
-* i3-gaps i3lock-color gvim polybar rofi feh
-* network-manager-applet
-* maim
-
 ## Touchpad Settings
 * https://wiki.archlinux.org/index.php/Libinput
 * `pacman -S xf86-input-libinput`
@@ -25,4 +20,117 @@ Option "NaturalScrolling" "true"
 * lxappearance for GTK3 and GTK2 and qt5-base for Qt
 
 
-## Manjaro-Architect Install
+# Manjaro-Architect Install
+Prepare Installation
+
+- Set Virtual Console
+  
+  - de-latin1-nodeadkeys
+- Partition Disk
+  
+  - Automatic
+- Mount Partitions
+  
+  - root, ext4, noatime, discard (for ssd)
+    
+  - boot, ext4, /boot, noatime (default)
+    
+- Configure Installer Mirrorlist
+  
+  - Edit Pacman Conf
+    
+    - Enable Color (uncomment)
+      
+    - multilib enabled by default (aur)
+      
+- Rank Mirrorlist by speed, but before that, rank by country. How?
+  
+- Choose Pacman Cache
+  
+  - Yes
+- Enable fsck hook
+  
+
+## Install Custom System
+
+### Install Base Packages
+
+- yay + base-devel
+  
+- linux-lts
+  
+- linux-latest
+  
+- Install Hardware Drivers
+  
+  - Install Display Drivers
+    
+    - Auto-install
+  - Install Network Drivers
+    
+    - Auto-install
+
+### Install Unconfigured Desktop Environments
+
+- Install Display Server
+  
+  - Defaults (xorg-server, xorg-xinit, xf86-input-keyboard, xf86-input-libinput, xf86-input-mouse)
+- Install Desktop environment
+  
+  - skip
+- Install Display Manager
+  
+  - lightdm
+- Install Networking Capabilities
+  
+  - Install Network Connection Manager
+    
+    - NetworkManager
+- Install Multimedia Support
+  
+  - Install Sound Driver(s)
+    
+    - Default (alsa-plugins, alsa-utils)
+- Install Bootloader
+  
+  - grub
+
+### Configure Base
+
+- Generate FSTAB
+  
+  - fstabgen -U -p (Device UUID)
+- Set Hostname
+  
+  - [Hostname]
+- Set System Locale
+  
+  - System Language: en_US.UTF-8
+    
+  - Locales: de_DE.UTF-8
+    
+- Set Desktop Keyboard Layout
+  
+  - de
+- Set Timezone and Clock
+  
+  - Europe/Berlin
+    
+  - utc
+    
+- Set Root Password
+  
+  - [password]
+- Add New User(s)
+  
+  - [user]
+    
+  - bash
+    
+  - [password]
+    
+
+### Install Custom Packages
+* i3-gaps i3lock-color gvim polybar rofi feh
+* network-manager-applet
+* maim
