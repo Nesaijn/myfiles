@@ -297,9 +297,9 @@ format-muted-prefix = "  "
 label-muted =  MUTE
 padding-right = 5
 
-ramp-volume-0 =  
-ramp-volume-1 =  
-ramp-volume-2 =  
+ramp-volume-0 =  
+ramp-volume-1 =  
+ramp-volume-2 =  
 ramp-volume-foreground = ${colors.foreground}
 
 [module/battery]
