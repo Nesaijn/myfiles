@@ -296,7 +296,7 @@ type = internal/pulseaudio
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%
 label-volume-foreground = #ab4642
-format-muted-prefix = "  "
+format-muted-prefix = "  "
 label-muted =  MUTE
 padding-right = 5
 
