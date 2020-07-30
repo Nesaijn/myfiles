@@ -49,8 +49,8 @@ foreground = ${colors.foreground}
 ;line-size = 2
 ;line-color = #ab4642
 
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 2
+module-margin-right = 2
 
 ;==========================================================
 
