@@ -17,10 +17,9 @@ Option "NaturalScrolling" "true"
 ```
 
 ## Theme Settings
-* https://askubuntu.com/questions/598943/how-to-de-uglify-i3-wm
 * https://wiki.archlinux.org/index.php/GTK
 * https://wiki.archlinux.org/index.php/Qt
 * https://wiki.archlinux.org/index.php/Uniform_look_for_Qt_and_GTK_applications
 
-* `pacman -S lxappearance gtk-chtheme qt5-base`
-* lxappearance for GTK3, gtk-chtheme for GTK2 and qt5-base for Qt
+* `pacman -S lxappearance qt5-base`
+* lxappearance for GTK3 and GTK2 and qt5-base for Qt
