@@ -131,6 +131,6 @@ Prepare Installation
     
 
 ### Install Custom Packages
-* i3-gaps i3lock-color gvim polybar rofi feh
+* i3-gaps i3lock-color gvim polybar rofi feh lxappearance
 * network-manager-applet
 * maim
