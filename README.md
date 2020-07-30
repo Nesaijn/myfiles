@@ -1,7 +1,7 @@
 # myfiles
 
 ## Install i3
-* i3-gaps i3lock-color gvim polybar rofi
+* i3-gaps i3lock-color gvim polybar rofi feh
 * network-manager-applet
 * maim
 
@@ -23,3 +23,6 @@ Option "NaturalScrolling" "true"
 
 * `pacman -S lxappearance qt5-base`
 * lxappearance for GTK3 and GTK2 and qt5-base for Qt
+
+
+## Manjaro-Architect Install
