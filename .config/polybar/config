@@ -26,6 +26,7 @@
 ;background-alt = #383838
 background = ${xrdb:background}
 foreground = ${xrdb:foreground}
+foreground-alt = #70FFFFFF
 warn = #FF6600
 alert = #FF0000
 
@@ -154,7 +155,7 @@ index-sort = true
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-foreground = #ffffff
+label-focused-foreground = ${colors.foreground}
 label-focused-padding = 2.2
 
 label-occupied = %name%
@@ -162,7 +163,7 @@ label-occupied-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
-label-unfocused-foreground = #70ffffff
+label-unfocused-foreground = ${colors.foreground-alt}
 label-unfocused-padding = ${self.label-focused-padding}
 
 label-empty = %name%
