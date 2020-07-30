@@ -306,8 +306,8 @@ ramp-volume-foreground = ${colors.foreground}
 ; Use the following command to list batteries and adapters:
 ; $ ls -1 /sys/class/power_supply/
 type = internal/battery
-battery = BAT0
-adapter = ADP1
+battery = CMB1
+adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
