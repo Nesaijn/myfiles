@@ -283,8 +283,6 @@ interval = 5
 time =  %H:%M
 time-alt =  %a, %d.%m.%Y%
 
-format-prefix = 
-
 label = %date% %time%
 label-foreground = ${colors.foreground}
 
