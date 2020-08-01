@@ -110,7 +110,7 @@ Prepare Installation
     
 
 ### Install Custom Packages
-* i3-gaps i3lock-color gvim polybar rofi feh lxappearance pcmanfm-gtk3 brave bluez-utils dunst pulseaudio 
+* i3-gaps i3lock-color gvim polybar rofi feh lxappearance pcmanfm-gtk3 brave bluez-utils dunst pulseaudio file-roller
 * ttf-font-awesome ttf-dejavu ttf-hack
 * network-manager-applet
 * maim
@@ -119,6 +119,7 @@ Prepare Installation
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
 * `yay -S lightdm-webkit-theme-sequoia-git`
+* `pacman -S gtk-engine-murrine`
 
 ```
 # /etc/lightdm/lightdm-webkit2-greeter.con
