@@ -1,5 +1,5 @@
 # Autostart Applications
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 
 set $mod Mod4
 
@@ -14,9 +14,14 @@ font pango:monospace 8
 # Autostart applications
 exec --no-startup-id dunst 
 exec megasync
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Autostart Tray Apps
 exec --no-startup-id pamac-tray
+
+# Shortcuts
+bindsym $mod+e pcmanfm
+bindsym $mod+b brave
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
