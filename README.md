@@ -22,6 +22,7 @@ Prepare Installation
     - multilib enabled by default (aur)
       
 - Rank Mirrorlist by speed, but before that, rank by country. How?
+  - pacman-mirrors --country Germany
   
 - Choose Pacman Cache
   
