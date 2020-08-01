@@ -3,7 +3,7 @@ rofi.dpi: 120
 rofi.font: Fira Code 14
 rofi.terminal: urxvt
 rofi.show-icons: true
-rofi.matching: fuzzy
+rofi.matching: normal
 rofi.lines: 8
 rofi.columns: 1
 rofi.bw: 0
