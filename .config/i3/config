@@ -13,6 +13,11 @@ font pango:monospace 8
 
 # Autostart applications
 exec --no-startup-id dunst 
+exec megasync
+
+# Autostart Tray Apps
+exec --no-startup-id pamac-tray
+
 
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
