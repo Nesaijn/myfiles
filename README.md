@@ -52,7 +52,7 @@ Prepare Installation
 * i3-gaps i3lock-color gvim polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk maim
 * ttf-font-awesome ttf-dejavu ttf-hack 
 * network-manager-applet pamac-tray-appindicator
-* bluez bluez-utils
+* bluez bluez-utils xorg-xbacklight
 * megasync (website)
   * "megasync: error while loading shared libraries: libraw.so.20: cannot open shared object file: No such file or directory"
   * find /usr -name "libraw.*" 2>
