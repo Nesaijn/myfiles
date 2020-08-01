@@ -110,11 +110,15 @@ Prepare Installation
     
 
 ### Install Custom Packages
-* i3-gaps i3lock-color gvim polybar rofi feh lxappearance pcmanfm-gtk3 brave bluez-utils dunst pulseaudio file-roller
-* ttf-font-awesome ttf-dejavu ttf-hack
+* i3-gaps i3lock-color gvim polybar rofi feh lxappearance pcmanfm-gtk3 brave bluez-utils dunst pulseaudio file-roller pamac
+* ttf-font-awesome ttf-dejavu ttf-hack 
 * network-manager-applet
 * maim
 * megasync (website)
+  * "megasync: error while loading shared libraries: libraw.so.20: cannot open shared object file: No such file or directory"
+  * find /usr -name "libraw.*" 2>
+  * Needs libraw.so.20 but only have libraw.so.19
+  * sudo pacman -U https://www.mirrorservice.org/sites/repo.manjaro.org/repos/unstable/extra/x86_64/libraw-0.20.0-1-x86_64.pkg.tar.zst
 
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
