@@ -204,7 +204,7 @@ bindsym $mod+r mode "resize"
 #}
 
 # Lock, logout, suspend, hibernate, reboot, shutdown functionality
-set $Locker i3lock && sleep 1
+set $Locker light-locker-command -l
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
