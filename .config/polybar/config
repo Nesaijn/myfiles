@@ -293,7 +293,7 @@ format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%
 label-volume-foreground = ${colors.foreground}
 format-muted-prefix = "  "
-label-muted =  MUTE
+label-muted = " "
 padding-right = 5
 
 ramp-volume-0 =  
