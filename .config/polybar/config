@@ -279,7 +279,7 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 time =  %H:%M
 time-alt =  %a, %d.%m.%Y%
