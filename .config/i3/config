@@ -221,7 +221,7 @@ bindsym Ctrl+Mod1+Delete mode "$mode_system"
 
 
 for_window [class=".*"] border pixel 1
-gaps inner 10
+gaps inner 5
 gaps outer 1
 
 smart_borders on
