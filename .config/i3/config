@@ -206,6 +206,8 @@ bindsym $mod+r mode "resize"
 # Lock, logout, suspend, hibernate, reboot, shutdown functionality
 set $Locker light-locker-command -l
 
+bindsym $ctrl+Mod1 $Locker
+
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
