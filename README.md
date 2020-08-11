@@ -90,6 +90,7 @@ greeter-session=lightdm-webkit2-greeter
 Option "Tapping" "on"               # To use touchpad tapping to click
 Option "ClickMethod" "clickfinger"  # To use double finger for right click and three finger for middle click
 Option "NaturalScrolling" "true"
+Option "AccelSpeed" "0.4"           # Touchpad speed. Number between -1 and 1. Default 0.
 ```
 
 ## Theme
