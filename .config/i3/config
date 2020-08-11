@@ -12,7 +12,7 @@ font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 
 # Start light-locker
-exec light-locker
+exec --no-startup-id light-locker --lock-on-lid
 
 # Autostart applications
 exec --no-startup-id dunst 
