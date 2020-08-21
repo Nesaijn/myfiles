@@ -306,7 +306,7 @@ ramp-volume-foreground = ${colors.foreground}
 type = internal/battery
 battery = CMB1
 adapter = AC
-full-at = 98
+full-at = 100
 
 #format-charging = <animation-charging> <label-charging>
 format-charging =  <label-charging>
