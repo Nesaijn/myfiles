@@ -49,7 +49,7 @@ Prepare Installation
   - fstabgen -U -p (Device UUID)
 
 ### Install Custom Packages
-* i3-gaps i3lock-color gvim polybar rofi feh sxiv lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk maim light-locker onlyoffice-desktopeditors
+* i3-gaps i3lock-color gvim polybar rofi feh sxiv lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk maim xclip light-locker onlyoffice-desktopeditors
 * ttf-font-awesome ttf-dejavu ttf-hack 
 * network-manager-applet pamac-tray-appindicator
 * bluez bluez-utils xorg-xbacklight
