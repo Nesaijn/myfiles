@@ -24,6 +24,7 @@ exec --no-startup-id pamac-tray
 
 # Shortcuts
 bindsym $mod+e pcmanfm
+bindsym $mod+w exec i3-sensible-terminal -e 'lf'
 bindsym $mod+b brave
 bindsym Print exec maim -u -s | xclip -selection clipboard -t image/png 
 bindsym Ctrl+Print exec maim -u -s | tee ~/Pictures/$(date +%Y-%M-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png
@@ -142,6 +143,9 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+# When pressing keys to switch to the current active workspace, to the last visited workspace will be switched
+workspace_auto_back_and_forth yes
+
 # move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace number $ws1
 bindsym $mod+Ctrl+2 move container to workspace number $ws2
@@ -181,10 +185,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym odiaeresis resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -233,7 +237,6 @@ gaps inner 5
 gaps outer 1
 
 smart_borders on
-smart_borders no_gaps
 #border_radius 6
 
 # class                 border  backgr. text    indicator
