@@ -59,6 +59,7 @@ Prepare Installation
   * Needs libraw.so.20 but only have libraw.so.19
   * sudo pacman -U https://www.mirrorservice.org/sites/repo.manjaro.org/repos/unstable/extra/x86_64/libraw-0.20.0-1-x86_64.pkg.tar.zst
 
+* https://github.com/svenstaro/rofi-calc
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
 * `yay -S lightdm-webkit-theme-sequoia-git`
