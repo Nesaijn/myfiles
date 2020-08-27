@@ -1,4 +1,4 @@
-rofi.modi: window,run,ssh,drun
+rofi.modi: run,drun,calc
 rofi.dpi: 120
 rofi.font: Fira Code 14
 rofi.terminal: urxvt
