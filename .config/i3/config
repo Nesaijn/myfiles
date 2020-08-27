@@ -26,8 +26,8 @@ exec --no-startup-id pamac-tray
 bindsym $mod+e pcmanfm
 bindsym $mod+w exec i3-sensible-terminal -e 'lf'
 bindsym $mod+b brave
-bindsym Print exec maim -u -s | xclip -selection clipboard -t image/png 
-bindsym Ctrl+Print exec maim -u -s | tee ~/Pictures/$(date +%Y-%M-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png
+bindsym Print exec --no-startup-id maim -u -s | xclip -selection clipboard -t image/png 
+bindsym Ctrl+Print exec --no-startup-id maim -u -s | tee ~/Pictures/$(date +%Y-%M-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png
 
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
