@@ -15,7 +15,6 @@ font pango:monospace 8
 exec --no-startup-id light-locker --lock-on-lid
 
 # Autostart applications
-exec --no-startup-id dunst 
 exec megasync
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
