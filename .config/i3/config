@@ -27,7 +27,7 @@ exec --no-startup-id pamac-tray
 # Shortcuts
 bindsym $mod+e pcmanfm
 bindsym $mod+w exec i3-sensible-terminal -e 'lf'
-bindsym $mod+b brave
+bindsym $mod+F2 brave
 bindsym Print exec --no-startup-id maim -u -s | xclip -selection clipboard -t image/png 
 bindsym Ctrl+Print exec --no-startup-id maim -u -s | tee ~/Pictures/$(date +%Y-%M-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png
 
