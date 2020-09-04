@@ -96,4 +96,5 @@ Option "AccelSpeed" "0.4"           # Touchpad speed. Number between -1 and 1. D
 
 ## Theme
 * Icons: https://github.com/daniruiz/flat-remix
+  * `yay -S flat-remix`
 * GTK Theme: https://www.gnome-look.org/p/1329022/
