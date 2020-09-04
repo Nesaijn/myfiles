@@ -14,3 +14,4 @@ LESSHISTFILE=-
 
 alias wget="wget --config=$XDG_CONFIG_HOME/wget/wgetrc"
 alias vim="vim -i NONE"
+alias feh="feh -."
