@@ -51,7 +51,7 @@ Prepare Installation
 ### Install Custom Packages
 * i3-gaps i3lock-color gvim polybar rofi feh sxiv lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker onlyoffice-desktopeditors
 * ttf-font-awesome ttf-dejavu ttf-hack 
-* network-manager-applet pamac-tray-appindicator pa-applet
+* network-manager-applet pamac-tray-appindicator pa-applet cbatticon
 * bluez bluez-utils xorg-xbacklight
 * megasync (website)
   * "megasync: error while loading shared libraries: libraw.so.20: cannot open shared object file: No such file or directory"
