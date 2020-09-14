@@ -65,8 +65,8 @@ font-5 = Font Awesome 5 Brands:pixelsize=9;2
 ;=============Modules Location=============================
 
 modules-left = i3
-modules-center = xwindow
-modules-right = xbacklight pulseaudio system-bluetooth-bluetoothctl battery date
+modules-center = date
+modules-right = 
 
 ;==========================================================
 
