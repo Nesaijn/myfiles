@@ -30,12 +30,6 @@ title = Dunst
 class = Dunst
 dmenu = "/usr/bin/rofi -dmenu"
 
-[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+period
-context = ctrl+shift+period
-
 [urgency_low]
 timeout = 4
 #background = "#141c21"
