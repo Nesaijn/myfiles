@@ -49,10 +49,14 @@ Prepare Installation
   - fstabgen -U -p (Device UUID)
 
 ### Install Custom Packages
-* i3-gaps i3lock-color gvim polybar rofi feh sxiv lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker onlyoffice-desktopeditors
+* i3-gaps i3lock-color rxvt-unicode gvim 
+
+# Packages
+## All
+* polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors
 * ttf-font-awesome ttf-dejavu ttf-hack 
-* network-manager-applet pamac-tray-appindicator pa-applet cbatticon
-* bluez bluez-utils xorg-xbacklight
+* network-manager-applet pamac-tray-appindicator pa-applet
+
 * megasync (website)
   * "megasync: error while loading shared libraries: libraw.so.20: cannot open shared object file: No such file or directory"
   * find /usr -name "libraw.*" 2>
@@ -60,6 +64,17 @@ Prepare Installation
   * sudo pacman -U https://www.mirrorservice.org/sites/repo.manjaro.org/repos/unstable/extra/x86_64/libraw-0.20.0-1-x86_64.pkg.tar.zst
 
 * https://github.com/svenstaro/rofi-calc
+
+### AUR
+* qtfm
+
+## Laptop
+* cbatticon xorg-xbacklight
+* bluez bluez-utils pulseaudio-bluetooth
+
+### AUR
+
+
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
 * `yay -S lightdm-webkit-theme-sequoia-git`
