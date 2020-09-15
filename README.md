@@ -53,7 +53,7 @@ Prepare Installation
 
 # Packages
 ## All
-* polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors
+* polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock
 * ttf-font-awesome ttf-dejavu ttf-hack 
 * network-manager-applet pamac-tray-appindicator pa-applet
 
