@@ -53,7 +53,7 @@ Prepare Installation
 
 # Packages
 ## All
-* polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock
+* polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock ntp
 * ttf-font-awesome ttf-dejavu ttf-hack 
 * network-manager-applet pamac-tray-appindicator pa-applet
 
@@ -74,6 +74,9 @@ Prepare Installation
 
 ### AUR
 
+
+# Other
+* start and enable ntpd
 
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
