@@ -17,14 +17,13 @@ exec --no-startup-id light-locker --lock-on-lid
 # Autostart applications
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+## Tray Apps
 exec --no-startup-id pamac-tray
 exec --no-startup-id megasync
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
-
-
-# Autostart Tray Apps
-exec --no-startup-id pamac-tray
+exec --no-startup-id cbatticon
 
 # Shortcuts
 bindsym $mod+e qtfm
