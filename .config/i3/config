@@ -27,11 +27,13 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id pamac-tray
 
 # Shortcuts
-bindsym $mod+e pcmanfm
-bindsym $mod+w exec i3-sensible-terminal -e 'lf'
+bindsym $mod+e qtfm
 bindsym $mod+F2 brave
-bindsym Print exec --no-startup-id "maim -u -s | xclip -selection clipboard -t image/png; dunstify 'Screenshot saved to clipboard'"
-bindsym Ctrl+Print exec --no-startup-id "maim -u -s | tee ~/Pictures/$(date +%Y-%M-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png; dunstify 'Screenshot saved to Pictures'"
+bindsym $mod+Ctrl+r exec --no-startup-id $HOME/.config/polybar/launch.sh
+
+## Screenshot Shortcuts
+bindsym Print exec --no-startup-id "maim -u -s | xclip -selection clipboard -t image/png; [ ${PIPESTATUS[0]} -eq 0 ] && dunstify 'Screenshot saved to clipboard'"
+bindsym Ctrl+Print exec --no-startup-id "maim -u -s | tee ~/Pictures/$(date +%Y-%M-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png; [ ${PIPESTATUS[0]} -eq 0 ] && dunstify 'Screenshot saved to Pictures'"
 
 # Dunst Shortcuts
 bindsym Ctrl+space exec --no-startup-id dunstctl close
