@@ -112,6 +112,9 @@ Option "NaturalScrolling" "true"
 Option "AccelSpeed" "0.4"           # Touchpad speed. Number between -1 and 1. Default 0.
 ```
 
+## Display Power Management Signaling
+* https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling
+
 ## Theme
 * Icons: https://github.com/daniruiz/flat-remix
   * `yay -S flat-remix`
