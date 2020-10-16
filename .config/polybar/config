@@ -33,7 +33,7 @@ alert = #FF0000
 ;==========================================================
 
 [bar/main]
-;monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 32
 ;offset-x = 0
