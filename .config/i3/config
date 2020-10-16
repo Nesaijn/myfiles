@@ -26,8 +26,8 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id cbatticon
 
 # Shortcuts
-bindsym $mod+e qtfm
-bindsym $mod+F2 brave
+bindsym $mod+e exec qtfm
+bindsym $mod+F2 exec brave
 bindsym $mod+Ctrl+r exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 ## Screenshot Shortcuts
