@@ -71,9 +71,10 @@ Prepare Installation
 ## Laptop
 * cbatticon xorg-xbacklight
 * bluez bluez-utils pulseaudio-bluetooth
+* autorandr
 
 ### AUR
-
+* srandrd
 
 # Other
 * start and enable ntpd
