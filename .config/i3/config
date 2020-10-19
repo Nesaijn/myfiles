@@ -1,5 +1,5 @@
 # Autostart Applications
-
+#exec --no-startup-id "srandrd ~/.config/polybar/launch.sh"
 
 set $mod Mod4
 
@@ -95,7 +95,7 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# alternatively, you can use the cursor keys:
+exec --no-startup-id "srandrd ~/.config/polybar/launch.sh# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
