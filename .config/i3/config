@@ -1,5 +1,6 @@
 # Autostart Applications
-#exec --no-startup-id "srandrd ~/.config/polybar/launch.sh"
+exec --no-startup-id "autorandr --change"
+
 
 set $mod Mod4
 
