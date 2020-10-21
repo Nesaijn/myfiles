@@ -74,7 +74,6 @@ Prepare Installation
 * autorandr
 
 ### AUR
-* srandrd
 
 # Other
 * start and enable ntpd
