@@ -16,3 +16,4 @@ LESSHISTFILE=-
 alias wget="wget --config=$XDG_CONFIG_HOME/wget/wgetrc"
 alias vim="vim -i NONE"
 alias feh="feh -."
+#eval $(keychain --eval --quiet id_ed25519 id_rsa ~/.keys/my_custom_key)
