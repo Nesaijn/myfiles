@@ -54,7 +54,7 @@ Prepare Installation
 # Packages
 ## All
 * polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock ntp keychain
-* ttf-font-awesome ttf-dejavu ttf-hack 
+* ttf-font-awesome ttf-dejavu ttf-hack noto-fonts-emoji
 * network-manager-applet pamac-tray-appindicator pa-applet
 
 * megasync (website)
