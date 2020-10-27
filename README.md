@@ -77,6 +77,7 @@ Prepare Installation
 
 # Other
 * start and enable ntpd
+* In ~/.ssh/conf `AddKeysToAgent yes` nötig?
 
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
