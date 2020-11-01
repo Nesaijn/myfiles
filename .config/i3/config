@@ -1,7 +1,6 @@
 # Autostart Applications
 exec --no-startup-id "autorandr --change"
 
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -102,17 +101,17 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-#bindsym $mod+x split h
+bindsym $mod+x split h
 
 # split in vertical orientation
-#bindsym $mod+y split v
+bindsym $mod+y split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
 #bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -238,10 +237,13 @@ mode "$mode_system" {
 
 bindsym Ctrl+Mod1+Delete mode "$mode_system"
 
-
 for_window [class=".*"] border pixel 3
+#for_window [class=""] floating enable
+
 gaps inner 5
 gaps outer 1
+
+focus_follows_mouse no
 
 # When "on", no gaps will appear when only one Window is open in the workspace.
 # When "inverse_outer", only outer gaps will appear when only one window is open in the workspace.
