@@ -49,13 +49,14 @@ Prepare Installation
   - fstabgen -U -p (Device UUID)
 
 ### Install Custom Packages
-* i3-gaps i3lock-color rxvt-unicode gvim 
+* i3-gaps alacritty gvim 
 
 # Packages
 ## All
-* polybar rofi feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock ntp keychain
+* polybar feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock keychain
 * ttf-font-awesome ttf-dejavu ttf-hack noto-fonts-emoji
 * network-manager-applet pamac-tray-appindicator pa-applet
+* rofi or ulauncher ?
 
 * megasync (website)
   * "megasync: error while loading shared libraries: libraw.so.20: cannot open shared object file: No such file or directory"
@@ -76,16 +77,15 @@ Prepare Installation
 ### AUR
 
 # Other
-* start and enable ntpd
-* In ~/.ssh/conf `AddKeysToAgent yes` nötig?
+* In ~/.ssh/conf `AddKeysToAgent yes`
 
 ## LightDM
 * https://github.com/naueramant/lightdm-webkit-sequoia
-* `yay -S lightdm-webkit-theme-sequoia-git`
 * `pacman -S gtk-engine-murrine`
+* `yay -S lightdm-webkit-theme-sequoia-git`
 
 ```
-# /etc/lightdm/lightdm-webkit2-greeter.con
+# /etc/lightdm/lightdm-webkit2-greeter.conf
 [greeter]
 ...
 webkit_theme = sequoia
