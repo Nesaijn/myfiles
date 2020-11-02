@@ -91,6 +91,15 @@ enable-ipc = true
 
 
 ;==============Modules=====================================
+[module/cal]
+type = custom/script
+exec = ~/.config/polybar/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/popup-calendar.sh --popup
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+label = %output:25%
+
 [module/xwindow]
 type = internal/xwindow
 label = %title%
