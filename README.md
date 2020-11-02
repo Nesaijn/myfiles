@@ -101,6 +101,9 @@ greeter-session=lightdm-webkit2-greeter
 ...
 ``` 
 
+- if necessary `systemctl stop gdm && systemctl disable gdm``
+- `systemctl start lightdm && systemctl enable lightdm`
+
 ## Touchpad Settings
 * https://wiki.archlinux.org/index.php/Libinput
 * `pacman -S xf86-input-libinput`
