@@ -1,3 +1,5 @@
+- alacritty, autorandr, dunst, i3, polybar, rofi and wget belong in ~/.config
+
 # Manjaro-Architect Install
 Prepare Installation
 - Mount Partitions
