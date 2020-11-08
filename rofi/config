@@ -1,7 +1,8 @@
-rofi.modi: run,drun,calc
+rofi.modi: run,drun
 rofi.dpi: 120
 rofi.font: Fira Code 14
 rofi.terminal: urxvt
+#rofi.terminal: alacritty
 rofi.show-icons: true
 rofi.matching: normal
 rofi.lines: 8
