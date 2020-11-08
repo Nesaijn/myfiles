@@ -31,7 +31,7 @@ bindsym $mod+Ctrl+r exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 ## Screenshot Shortcuts
 bindsym Print exec --no-startup-id "maim -u -s | xclip -selection clipboard -t image/png; [ ${PIPESTATUS[0]} -eq 0 ] && dunstify 'Screenshot saved to clipboard'"
-bindsym Ctrl+Print exec --no-startup-id "maim -u -s | tee ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png; [ ${PIPESTATUS[0]} -eq 0 ] && dunstify 'Screenshot saved to Pictures'"
+bindsym Ctrl+Print exec --no-startup-id "maim -u -s | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S)_maim.png | xclip -selection clipboard -t image/png; [ ${PIPESTATUS[0]} -eq 0 ] && dunstify 'Screenshot saved to Pictures'"
 
 # Dunst Shortcuts
 bindsym Ctrl+space exec --no-startup-id dunstctl close
@@ -74,7 +74,9 @@ bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show drun
-#bindsym $mod --release exec rofi -show drun
+# start Ulauncher (a program launcher)
+#bindsym $mod+d exec --no-startup-id "ulauncher --no-window-shadow"
+
 
 # change focus
 bindsym $mod+h focus left
