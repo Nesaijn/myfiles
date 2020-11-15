@@ -7,6 +7,8 @@ window:
   dynamic_padding: true
 scrolling:
   history: 20000
+selection:
+  save_to_clipboard: true
 font:
   normal:
     family: Hack
@@ -14,7 +16,7 @@ font:
   size: 10.5
 colors:
   primary:
-    background: '#181818'
+    background: '#0d0d0d'
     foreground: '#c5c8c6'
   normal:
     black:   '0x282c34'
