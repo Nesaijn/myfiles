@@ -10,6 +10,8 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 OUTPUTS=$(polybar --list-monitors | cut -d":" -f1)
 TRAY_OUTPUT=$(polybar --list-monitors | awk -F: '/primary/{print $1}')
 
+[ -z $TRAY_OUTPUT ] && [ $(echo $OUTPUTS | wc -l) -eq 1 ] && TRAY_OUTPUT=$OUTPUTS
+
 # Launch Polybar, using default config location ~/.config/polybar/config
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do
