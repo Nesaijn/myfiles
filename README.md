@@ -1,5 +1,7 @@
 - alacritty, autorandr, dunst, i3, polybar, rofi and wget belong in ~/.config
 
+- https://github.com/i3-gnome/i3-gnome
+
 # Manjaro-Architect Install
 Prepare Installation
 - Mount Partitions
