@@ -16,6 +16,6 @@ LESSHISTFILE=-
 alias wget="wget --config=$XDG_CONFIG_HOME/wget/wgetrc"
 # Make it that vim does not create a viminfo file
 alias vim="vim -i NONE"
-# Make it so that the picture fits in the window. Could also add this parameter to the feh.desktop "Exec=feh -. --start-at %u"
+# Make it so that the picture fits in the window. Could also add this parameter to the /usr/share/applications/feh.desktop "Exec=feh -. --start-at %u"
 alias feh="feh -."
 #eval $(keychain --eval --quiet id_ed25519 id_rsa ~/.keys/my_custom_key)
