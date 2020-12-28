@@ -53,7 +53,7 @@ Prepare Installation
   - fstabgen -U -p (Device UUID)
 
 ### Install Custom Packages
-* i3-gaps alacritty gvim 
+* i3-gaps alacritty gvim bash-completion
 
 # Packages
 ## All
