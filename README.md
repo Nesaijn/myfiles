@@ -57,7 +57,7 @@ Prepare Installation
 
 # Packages
 ## All
-* polybar feh lxappearance pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock keychain
+* polybar feh lxappearance (kvantum) pcmanfm-gtk3 brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock keychain
 * ttf-font-awesome ttf-dejavu ttf-hack noto-fonts-emoji
 * network-manager-applet pamac-tray-appindicator pa-applet
 * rofi or ulauncher ?
