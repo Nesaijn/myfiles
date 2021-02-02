@@ -177,4 +177,6 @@ bar {
     }
 }
 
+default_border none
+
 include @sysconfdir@/sway/config.d/*
