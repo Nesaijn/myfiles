@@ -1,0 +1,55 @@
+
+configuration {
+  modi: "run,drun";
+  show-icons: true;
+  terminal: "alacritty";
+}
+
+* {
+  background-color: #0d0d0d;
+  text-color: #AAAAAA;
+  spacing: 0;
+  width: 512px;
+  lines: 8;
+}
+
+window {
+  border: 1px;
+  border-color: #000000;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt,entry];
+}
+
+prompt {
+  padding: 16px;
+  border: 0 1px 0 0;
+}
+
+textbox {
+  background-color: #2e343f;
+  border: 0 0 1px 0;
+  border-color: #282C33;
+  padding: 8px 16px;
+}
+
+entry {
+  padding: 16px;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
+}
+
+element {
+  border: 0 0 1px 0;
+  padding: 16px;
+}
+
+element selected {
+  background-color: #1e1e1e;
+}
