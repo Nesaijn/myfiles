@@ -3,6 +3,8 @@ configuration {
   modi: "run,drun";
   show-icons: true;
   terminal: "alacritty";
+  sort: true;
+  drun-match-fields: "name,generic,exec";  
 }
 
 * {
