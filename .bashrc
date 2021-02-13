@@ -11,6 +11,11 @@ export VISUAL=/usr/bin/vim
 # Directory needs to be created
 export HISTFILE=$XDG_CONFIG_HOME/bash/bash_history
 
+# Sway stuff
+# export MOZ_ENABLE_WAYLAND=1
+# export XDG_SESSION_TYPE=wayland # If not already set
+# export XDG_CURRENT_DESKTOP=sway # If not already set
+
 LESSHISTFILE=-
 # Directory and file needs to be created
 alias wget="wget --config=$XDG_CONFIG_HOME/wget/wgetrc"
