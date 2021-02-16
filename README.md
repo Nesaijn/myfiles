@@ -126,8 +126,8 @@ cd ~/.config/sway
 wget https://raw.githubusercontent.com/Nesaijn/myfiles/master/sway/config
 # or
 cp /etc/sway/config ~/.config/sway/
-# Add the keyboard settings
 ```
+- Add the keyboard settings
 ```
 input "type:keyboard" {
         xkb_layout de
