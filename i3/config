@@ -3,7 +3,7 @@ exec --no-startup-id "autorandr --change"
 
 set $mod Mod4
 
-set_from_resource $background background #000000
+#set_from_resource $background background #000000
 
 # Restart Polybar with i3
 exec_always $HOME/.config/polybar/launch.sh
