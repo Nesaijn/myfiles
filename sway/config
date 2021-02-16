@@ -188,14 +188,12 @@ client.unfocused        #333333 #0d0d0d #888888
 #client.placeholder     #000000 #0c0c0c #ffffff
 #client.background      #ffffff
 
-
 default_border pixel 3
 
 # When "on", no gaps will appear when only one Window is open in the workspace.
 # When "inverse_outer", only outer gaps will appear when only one window is open in the workspace.
 smart_gaps on
 smart_borders on
-default_border none
 gaps inner 5
 gaps outer 1
 
