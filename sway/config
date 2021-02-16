@@ -19,7 +19,7 @@ input "type:keyboard" {
 }
 
 input "type:touchpad" {
-        tab enabled
+        tap enabled
         natural_scroll enabled
         middle_emulation enabled
 }
