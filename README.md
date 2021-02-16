@@ -107,6 +107,30 @@ or
 Interesting:
 - autotiling
 
+For sway:
+
+## Chroot into system
+
+- Add to `~/.bash_profile`
+```
+# If running from tty1 start sway
+if [ "$(tty)" = "/dev/tty1" ]; then
+	exec sway
+fi
+```
+
+- Add to `~/.config/sway/config` at least the keyboard settings
+```
+input "type:keyboard" {
+        xkb_layout de
+        xkb_variant nodeadkeys
+
+}
+```
+
+
+
+
 # Packages
 ## All
 * polybar feh lxappearance (kvantum) thunar brave dunst pulseaudio file-roller pamac-gtk polkit-gnome maim xclip light-locker zathura onlyoffice-desktopeditors xss-lock keychain
