@@ -3,10 +3,27 @@
 - https://github.com/i3-gnome/i3-gnome
 
 # Manjaro-Architect Install
-Prepare Installation
+
+- pacman-mirrors --country Germany
+
+## Prepare Installation
+
+- change virtual console (de-latin1-nodeadkeys)
+
+- Partition Disk
+  - Automatic Partitioning
+  
+- LUKS Encryption (optional)
+  - Automatic LUKS Encryption
+  - Do not choose the boot partition, only the root partition
+  - Name it
+  - Set password
+
 - Mount Partitions
   - root, ext4, noatime, discard (for ssd)
-  - boot, ext4, /boot, noatime (default)
+  - SWAP file
+  - Select done, as the UEFI mountpoint will be asked afterwards
+  - boot, /boot/efi
     
 - Configure Installer Mirrorlist
   - Edit Pacman Conf
@@ -19,11 +36,15 @@ Prepare Installation
   - Yes
   
 - Enable fsck hook
+  - Yes
   
 
 ## Install Custom System
 
-### Install Base Packages  
+### Install Base Packages
+
+- yay + base-devel
+- Select kernel (linux-lts)
 - Install Hardware Drivers
   - Install Display Drivers
     - Auto-install
@@ -34,26 +55,57 @@ Prepare Installation
 
 - Install Display Server
   - Defaults (xorg-server, xorg-xinit, xf86-input-keyboard, xf86-input-libinput, xf86-input-mouse)
+or
+  - wayland (and xorg-server-xwayland)
 - Install Desktop environment
   - skip
 - Install Display Manager
   - lightdm
+  or
+  - skip for sway
 - Install Networking Capabilities
+  - Install Wireless Device Packages (if necessary)
+    - Defaul (dialog, iw, rp-pppoe, wireless_tools, wpa-actiond)
+    - bluez-firmware (if bluetooth available)
   - Install Network Connection Manager
     - NetworkManager
 - Install Multimedia Support
   - Install Sound Driver(s)
     - Default (alsa-plugins, alsa-utils)
-- Install Bootloader
+    - pulseaudio-alsa, pulseaudio-bluetooth (if bluetooth available), pulseaudio-jack, pavucontrol
+### Install Bootloader
   - grub
+  
+> Some UEFI firmware may not detect the bootloader unless it is set as default by copying its efi stub to /boot/efi/EFI/boot and renaming it to bootx64.efi.
+>
+> It is recommended to do so unless already using a default bootloader, or where intending to use multiple bootloaders.
+
+  - Set bootloader as default -> Yes
 
 ### Configure Base
 
 - Generate FSTAB
   - fstabgen -U -p (Device UUID)
+- Set Hostname
+- Set System Locale
+  - System Language: en_US.UTF-8
+  - System Locale: de_DE.UTF-8
+- Set Desktop Keyboard Layout
+  - de
+- Set Timezone and Clock
+  - Europe > Berlin
+  - utc (unless dualbooting with Windows)
+- Set Root Password
+- Add New User(s)
 
 ### Install Custom Packages
-* i3-gaps alacritty gvim bash-completion
+- alacritty gvim bash-completion
+- i3-gaps
+or
+- sway swaybg waybar swayidle swaylock-effects 
+
+Interesting:
+- autotiling
 
 # Packages
 ## All
