@@ -9,7 +9,8 @@ set $right l
 
 set $term alacritty
 
-output * bg ~/Pictures/Wallpapers/wallpaper.jpg fill
+#output * bg ~/Pictures/Wallpapers/wallpaper.jpg fill
+output * bg /usr/share/backgrounds/sway/SwayWallpaper_Blue_1920x1080.png fill
 
 input "type:keyboard" {
         xkb_layout de
