@@ -180,6 +180,15 @@ bar {
     }
 }
 
+
+# When "on", no gaps will appear when only one Window is open in the workspace.
+# When "inverse_outer", only outer gaps will appear when only one window is open in the workspace.
+smart_gaps on
+smart_borders on
 default_border none
+gaps inner 5
+gaps outer 1
+
+
 
 include @sysconfdir@/sway/config.d/*
