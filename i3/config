@@ -256,6 +256,7 @@ gaps outer 1
 # When "on", no gaps will appear when only one Window is open in the workspace.
 # When "inverse_outer", only outer gaps will appear when only one window is open in the workspace.
 smart_gaps on
+smart_borders on
 
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #ffffff #ffffff #2e9ef4
