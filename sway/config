@@ -8,6 +8,8 @@ set $up k
 set $right l
 
 set $term alacritty
+set $launcher "wofi -G --show drun"
+set $filemanager thunar
 
 #output * bg ~/Pictures/Wallpapers/wallpaper.jpg fill
 output * bg /usr/share/backgrounds/sway/SwayWallpaper_Blue_1920x1080.png fill
@@ -15,7 +17,6 @@ output * bg /usr/share/backgrounds/sway/SwayWallpaper_Blue_1920x1080.png fill
 input "type:keyboard" {
         xkb_layout de
         xkb_variant nodeadkeys
-
 }
 
 input "type:touchpad" {
@@ -36,7 +37,20 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 # Start launcher
-bindsym $mod+d exec $menu
+bindsym $mod+d exec $launcher
+
+# Start filemanager
+bindsym $mod+e exec thunar
+
+# Use pactl to adjust volume in PulseAudio.
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Brightness control (May need to be part of group video: `usermod -aG video <user>`
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 # Drag floating windows with $mod + left mouse button
 # Resize with $mod + right mouse button
@@ -162,21 +176,50 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# Lock, logout, suspend, hibernate, reboot, shutdown functionality
+#set $Locker swaylock -i ~/Pictures/Wallpapers/wallpaper.jpg
+set $Locker swaylock
+
+bindsym Ctrl+Mod1+l exec --no-startup-id $Locker
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym Ctrl+Mod1+Delete mode "$mode_system"
+
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    # waybar
+    
+    # Swaybar configuration
     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+    colors {    
+#      font "hack 10"
+      statusline #ffffff
+      background #0d0d0d
+      #                  border  backgr. text
+      focused_workspace  #0d0d0d #0d0d0d #ffffff
+      active_workspace   #0d0d0d #0d0d0d #ffffff80
+      inactive_workspace #0d0d0d #0d0d0d #ffffff60
     }
 }
 
@@ -187,6 +230,12 @@ client.unfocused        #333333 #0d0d0d #888888
 #client.urgent          #2f344a #900000 #ffffff
 #client.placeholder     #000000 #0c0c0c #ffffff
 #client.background      #ffffff
+
+
+# To get app_id:
+# swaymsg -t get_tree
+for_window [app_id="pavucontrol"] floating enable
+
 
 default_border pixel 3
 
