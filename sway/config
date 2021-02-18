@@ -12,7 +12,7 @@ set $launcher "wofi -G --show drun"
 set $filemanager thunar
 
 #output * bg ~/Pictures/Wallpapers/wallpaper.jpg fill
-output * bg /usr/share/backgrounds/sway/SwayWallpaper_Blue_1920x1080.png fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 input "type:keyboard" {
         xkb_layout de
