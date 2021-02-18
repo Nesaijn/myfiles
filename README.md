@@ -22,7 +22,7 @@
 - Mount Partitions
   - root, ext4, noatime, discard (for ssd)
   - SWAP file
-  - Select done, as the UEFI mountpoint will be asked afterwards
+  - Select done, as the UEFI mountpoint will be asked afterwards, if not redo and mount the boot partition to /boot
   - boot, /boot/efi
     
 - Configure Installer Mirrorlist
