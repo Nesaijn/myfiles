@@ -58,11 +58,31 @@ For mounting the boot partition on UEFI, read the text.
 - grub
 - make default
 
+> Some UEFI firmware may not detect the bootloader unless it is set as default by copying its efi stub to /boot/efi/EFI/boot and renaming it to bootx64.efi.
+>
+> It is recommended to do so unless already using a default bootloader, or where intending to use multiple bootloaders.
+  
+  - Yes
+
 > [Install Grub][1] cp: cannot stat '/boot/EFI/manjaro/grubx64.efi': No such file or directory
+
+Because of renaming the boot entry/id (`manjaro-sway` instead of default `manjaro`) 
 
 > Grub has been set as default bootloader
 
-???
+- Do it manually: chroot into system
+`cp /boot/efi/EFI/manjaro-sway/grubx64.efi /boot/efi/EFI/boot/bootx64.efi`
+or
+`cp /boot/EFI/manjaro-sway/grubx64.efi /boot/EFI/boot/bootx64.efi`
+
+Depending on where the boot partition is mounted.
+
+Still on closing the installer:
+
+> Bootloader is not installed
+
+Because of non-default boot entry name/id ...
+
 
 ### Install Unconfigured Desktop Environments
 
@@ -89,9 +109,7 @@ or
 ### Install Bootloader
   - grub
   
-> Some UEFI firmware may not detect the bootloader unless it is set as default by copying its efi stub to /boot/efi/EFI/boot and renaming it to bootx64.efi.
->
-> It is recommended to do so unless already using a default bootloader, or where intending to use multiple bootloaders.
+
 
   - Set bootloader as default -> Yes
 
