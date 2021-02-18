@@ -1,3 +1,5 @@
+https://mega.nz/linux/MEGAsync/Arch_Extra/x86_64/megacmd-x86_64.pkg.tar.zst
+
 - alacritty, autorandr, dunst, i3, polybar, rofi and wget belong in ~/.config
 
 - https://github.com/i3-gnome/i3-gnome
