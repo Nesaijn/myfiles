@@ -22,8 +22,11 @@
 - Mount Partitions
   - root, ext4, noatime, discard (for ssd)
   - SWAP file
-  - Select done, as the UEFI mountpoint will be asked afterwards, if not redo and mount the boot partition to /boot
+Select done, as the UEFI mountpoint will be asked afterwards, if not redo and mount the boot partition to /boot
+
+For mounting the boot partition on UEFI, read the text. 
   - boot, /boot/efi
+  - When using LUKS encryption mount to `/boot` (?)
     
 - Configure Installer Mirrorlist
   - Edit Pacman Conf
@@ -50,6 +53,16 @@
     - Auto-install
   - Install Network Drivers
     - Auto-install
+
+### Install Bootloader
+- grub
+- make default
+
+> [Install Grub][1] cp: cannot stat '/boot/EFI/manjaro/grubx64.efi': No such file or directory
+
+> Grub has been set as default bootloader
+
+???
 
 ### Install Unconfigured Desktop Environments
 
