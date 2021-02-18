@@ -203,7 +203,7 @@ bindsym Ctrl+Mod1+Delete mode "$mode_system"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    # waybar
+    # swaybar_command waybar
     
     # Swaybar configuration
     position top
