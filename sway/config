@@ -10,6 +10,7 @@ set $right l
 set $term alacritty
 set $launcher "wofi -G --show drun"
 set $filemanager thunar
+set $browser librewolf
 
 #output * bg ~/Pictures/Wallpapers/wallpaper.jpg fill
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -40,7 +41,14 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $launcher
 
 # Start filemanager
-bindsym $mod+e exec thunar
+bindsym $mod+e exec $filemanager
+
+# Start filemanager
+bindsym $mod+F2 exec $browser
+
+# Take Screenshots (Set XDG_SCREENSHOTS_DIR for location to save in)
+bindsym Print exec "grimshot --notify copy area"
+bindsym Ctrl+Print exec "grimshot --notify save area"
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -51,6 +59,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Brightness control (May need to be part of group video: `usermod -aG video <user>`
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
+
+# Control Notifications (mako)
+bindsym Ctrl+space exec "makoctl dismiss"
 
 # Drag floating windows with $mod + left mouse button
 # Resize with $mod + right mouse button
@@ -203,6 +214,7 @@ bindsym Ctrl+Mod1+Delete mode "$mode_system"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    # Use waybar instead of swaybar
     # swaybar_command waybar
     
     # Swaybar configuration
@@ -247,7 +259,7 @@ client.unfocused        #333333 #0d0d0d #888888
 for_window [app_id="pavucontrol"] floating enable
 
 
-default_border pixel 3
+
 
 # When "on", no gaps will appear when only one Window is open in the workspace.
 # When "inverse_outer", only outer gaps will appear when only one window is open in the workspace.
@@ -255,7 +267,11 @@ smart_gaps on
 smart_borders on
 gaps inner 5
 gaps outer 1
+default_border pixel 3
 
+# Autostart
+exec mako # Notification
+exec mega-cmd-server
 
 
 include @sysconfdir@/sway/config.d/*
