@@ -224,7 +224,11 @@ greeter-session=lightdm-webkit2-greeter
 - `systemctl start lightdm && systemctl enable lightdm`
 - if necessary `systemctl stop gdm && systemctl disable gdm``
 
-## Touchpad Settings
+## Sway
+
+- qt5-wayland
+
+# Touchpad Settings
 * https://wiki.archlinux.org/index.php/Libinput
 * `pacman -S xf86-input-libinput`
 * `cp /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf`
@@ -236,10 +240,10 @@ Option "NaturalScrolling" "true"
 Option "AccelSpeed" "0.4"           # Touchpad speed. Number between -1 and 1. Default 0.
 ```
 
-## Display Power Management Signaling
+# Display Power Management Signaling
 * https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling
 
-## Theme
+# Theme
 * Flat Remix Icons and GTK Theme: https://github.com/daniruiz/flat-remix
   * `yay -S flat-remix flat-remix-gtk`
 * Arc Black GTK Theme: https://www.gnome-look.org/p/1329022/
