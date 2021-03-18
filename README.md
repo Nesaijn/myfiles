@@ -36,6 +36,7 @@ For mounting the boot partition on UEFI, read the text.
       
 - Rank Mirrorlist by speed, but before that, rank by country. How?
   - pacman-mirrors --country Germany
+  - pacman-mirrors --fasttrack
 
 - Choose Pacman Cache
   - Yes
