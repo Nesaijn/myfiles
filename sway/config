@@ -273,5 +273,7 @@ default_border pixel 3
 exec mako # Notification
 exec mega-cmd-server
 
+# So that user services also use the correct environment variables, like XDG_CURRENT_DESKTOP=sway 
+exec "systemctl --user import-environment"
 
 include @sysconfdir@/sway/config.d/*
