@@ -128,7 +128,8 @@
             "default": ["", ""] // Icons: volume-down, volume-up
         },
         //"on-click": "alacritty --title='Sound Mixer' --command='pulsemixer'",
-        "on-click": "pavucontrol",
+        //"on-click": "pavucontrol -t 3",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": true
     },
 
