@@ -180,15 +180,18 @@ input "type:keyboard" {
 * network-manager-applet pamac-tray-appindicator pa-applet
 * rofi or ulauncher ?
 
-* megasync (website)
+* megasync (website) or AUR
   * "megasync: error while loading shared libraries: libraw.so.20: cannot open shared object file: No such file or directory"
   * find /usr -name "libraw.*" 2>
   * Needs libraw.so.20 but only have libraw.so.19
   * sudo pacman -U https://www.mirrorservice.org/sites/repo.manjaro.org/repos/unstable/extra/x86_64/libraw-0.20.0-1-x86_64.pkg.tar.zst
 
 * https://github.com/svenstaro/rofi-calc
+* https://github.com/stunkymonkey/nautilus-open-any-terminal
 
 ### AUR
+* megasync
+* nautilus-megasync
 
 ## Laptop
 * cbatticon xorg-xbacklight
