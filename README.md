@@ -197,6 +197,7 @@ input "type:keyboard" {
 * cbatticon xorg-xbacklight
 * bluez bluez-utils pulseaudio-bluetooth
 * autorandr
+* auto-cpufreq
 
 ### AUR
 
